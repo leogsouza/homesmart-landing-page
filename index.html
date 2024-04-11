@@ -6,8 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homesmart</title>
   </head>
-  <body class="bg-blue-500">
-    <div id="app"></div>
+  <body class="max-w-[2000px] 
+    mx-auto 
+    text-neutral-900 
+    dark:text-neutral-200
+    bg-white
+    dark:bg-neutral-800
+    ">
+    <nav class="p-4 mx-auto bg-amber-400">
+      <div class="container flex items-center justify-between mx-auto">
+        <a href="/" aria-label="Go to homepage" class="z-50 transition-opacity rounded-sm focus:outline-none focus-visible:ring-4 ring-neutral-900 ring-offset-4 ring-offset-amber-400 lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:top-9 hover:opacity-75">
+          <img src="./assets/logo.svg" alt="Home Smart Logo" width="200" class="w-48 md:w-64 lg:w-72">
+        </a>
+        <button id="menu" class="transition-colors rounded-sm lg:hidden focus:outline-none focus-visible:ring-4 ring-neutral-900 ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600" aria-expanded="false" aria-label="Open menu">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          
+        </button>
+        <div role="menubar" class="absolute left-0 right-0 flex-col items-center hidden gap-4 p-6 text-lg text-center shadow-xl top-16 bg-amber-400 lg:flex lg:flex-row lg:static lg:shadow-none lg:justify-between lg:w-full">
+          <a href="/" role="menuitem" class="px-6 py-1 transition-colors rounded-sm dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600">Home</a>
+          <a href="/" role="menuitem" class="px-6 py-1 transition-colors rounded-sm lg:mr-auto dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600">Contact</a>
+          <a href="/" role="menuitem" class="px-6 py-1 transition-colors rounded-sm dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600">Login</a>
+          <a href="/" role="menuitem" class="px-6 py-2 text-white transition-shadow bg-teal-900 rounded-md shadow-xl hover:shadow-none dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 ring-offset-4 ring-offset-amber-400 ">Sign Up</a>
+          
+        </div>
+      </div>
+    </nav>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
